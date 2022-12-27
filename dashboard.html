@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="divided">
+        <div class="userClass">
+            <div class="topView">
+                <img src="assests/profile.png" height="100px" width="100px" alt="profile">
+                <h2>Hello, <span id="userkanam"></span></h2>
+            </div>
+            <div class="displayform">
+                <div class="noflex">
+                    <label for="Email">Your E-mail </label>
+                    <input type="email" name="email" id="email" disabled>
+                </div>
+                <div class="noflex">
+                    <label for="number">Your Number</label>
+                    <input type="text" name="number" id="number" disabled>
+                </div>
+                <div class="iskoflexkaro">
+                    <div class="actnBtn">
+                        <a href="#">Edit Account</a>
+                    </div>
+
+                    <div class="actnBtn">
+                        <a href="#" onclick="swal('No Trips Right Now!')">My Trips</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rideClass">
+            <img src="assests/rideCar.png" alt="rideCar" height="150px" width="200px">
+            <div >
+                <button id="bookRide" onclick="bookRide()">Book Ride</button>
+            </div>
+
+            <img src="assests/createRide.png" alt="createRide" height="150px" width="200px">
+            <div>
+                <button id="bookRide" onclick="createRide()">Create Ride</button>
+            </div>
+
+
+        </div>
+
+        <div class="belowfooter">
+            <a href="index.html">Sign out</a>
+            
+        </div>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body></html>
